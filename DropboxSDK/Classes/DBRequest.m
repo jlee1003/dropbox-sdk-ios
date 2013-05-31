@@ -201,7 +201,7 @@ id<DBNetworkRequestDelegate> dbNetworkRequestDelegate = nil;
         NSString* resultString = [self resultString];
         if ([resultString length] > 0) {
             @try {
-                DBJsonParser *jsonParser = [DBJsonParser new];
+                SBJsonParser *jsonParser = [SBJsonParser new];
                 NSObject* resultJSON = [jsonParser objectWithString:resultString];
                 [jsonParser release];
                 
